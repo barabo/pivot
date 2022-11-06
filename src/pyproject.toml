@@ -32,6 +32,9 @@ pivot = "pivot:cli.main"
 [tool.black]
 line-length = 79
 
+[tool.flit.external-data]
+directory = "data"
+
 [tool.flit.module]
 name = "pivot"
 
