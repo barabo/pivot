@@ -6,8 +6,8 @@ build-backend = "flit_core.buildapi"
 name = "pypivot"
 authors = [{name = "Carl Anderson", email = "carl@dumpsterfire.dev"}]
 dynamic = ["version", "description"]
-license = { file = "../LICENSE" }
-readme = "../README.md"
+license = { file = "LICENSE" }
+readme = "README.md"
 requires = [
     "click",
 ]
@@ -33,3 +33,9 @@ line-length = 79
 
 [tool.flit.module]
 name = "pivot"
+
+[tool.flit.sdist]
+include = [
+    "LICENSE",
+    "README.md",
+]
