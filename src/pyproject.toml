@@ -6,9 +6,30 @@ build-backend = "flit_core.buildapi"
 name = "pypivot"
 authors = [{name = "Carl Anderson", email = "carl@dumpsterfire.dev"}]
 dynamic = ["version", "description"]
+license = { file = "../LICENSE" }
+readme = "../README.md"
+requires = [
+    "click",
+]
+requires-dev = [
+    "black",
+    "pytest",
+    "pytest-cov",
+    "tox",
+]
+requires-doc = [
+    "click-man",
+]
+requires-extra = []
+
+[project.urls]
+repository = "https://github.com/barabo/pivot"
 
 [project.scripts]
 pivot = "pivot:cli.main"
+
+[tool.black]
+line-length = 79
 
 [tool.flit.module]
 name = "pivot"
