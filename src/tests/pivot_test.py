@@ -3,7 +3,7 @@ import unittest
 
 class SimpleTestCase(unittest.TestCase):
     def testImport(self):
-        import pypivot
+        import pivot
 
 
 if __name__ == "__main__":
