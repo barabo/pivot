@@ -8,19 +8,20 @@ authors = [{name = "Carl Anderson", email = "carl@dumpsterfire.dev"}]
 dynamic = ["version", "description"]
 license = { file = "LICENSE" }
 readme = "README.md"
-requires = [
+dependencies = [
     "click",
 ]
-requires-dev = [
+
+[project.optional-dependencies]
+dev = [
     "black",
     "pytest",
     "pytest-cov",
     "tox",
 ]
-requires-doc = [
+doc = [
     "click-man",
 ]
-requires-extra = []
 
 [project.urls]
 repository = "https://github.com/barabo/pivot"
