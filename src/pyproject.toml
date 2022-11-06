@@ -7,5 +7,8 @@ name = "pypivot"
 authors = [{name = "Carl Anderson", email = "carl@dumpsterfire.dev"}]
 dynamic = ["version", "description"]
 
+[project.scripts]
+pivot = "cli:main"
+
 [tool.flit.module]
 name = "pivot"
