@@ -1,0 +1,9 @@
+{
+    "arch": "arm64",
+    "cpu": "Apple M1 Pro",
+    "machine": "carls-mbp-2.lan",
+    "num_cpu": "10",
+    "os": "Darwin 21.6.0",
+    "ram": "34359738368",
+    "version": 1
+}

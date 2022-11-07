@@ -11,17 +11,17 @@
 
     // The URL or local path of the source code repository for the
     // project being benchmarked
-    "repo": ".",
+    "repo": "..",
 
     // The Python project's subdirectory in your repo.  If missing or
     // the empty string, the project is assumed to be located at the root
     // of the repository.
-    "repo_subdir": "src/pivot",
+    "repo_subdir": "src",
 
     // Customizable commands for building, installing, and
     // uninstalling the project. See asv.conf.json documentation.
     //
-    "install_command": ["in-dir=asv/env flit install"],
+    "install_command": ["in-dir={build_dir} flit install"],
     "uninstall_command": ["return-code=any python -mpip uninstall -y {project}"],
     "build_command": ["flit build"],
 
@@ -81,6 +81,11 @@
     // new environments.  A value of ``null`` means that the variable
     // will not be set for the current combination.
     //
+    "matrix": {
+        "req": {
+            "flit": []
+        }
+    },
     // "matrix": {
     //     "req": {
     //         "numpy": ["1.6", "1.7"],

@@ -1,0 +1,51 @@
+{
+    "pivot_benchmarks.time_import_pivot_cli": {
+        "code": "def time_import_pivot_cli():\n    from pivot import cli as _",
+        "min_run_count": 2,
+        "name": "pivot_benchmarks.time_import_pivot_cli",
+        "number": 0,
+        "param_names": [],
+        "params": [],
+        "repeat": 0,
+        "rounds": 2,
+        "sample_time": 0.01,
+        "timeout": 60.0,
+        "type": "time",
+        "unit": "seconds",
+        "version": "cbaba6a96e64164214afad6890ef84b9956d94656958dcf69e13d32be83cbacc",
+        "warmup_time": -1
+    },
+    "pivot_benchmarks.time_short_sleep": {
+        "code": "def time_short_sleep():\n    time.sleep(0.01)",
+        "min_run_count": 2,
+        "name": "pivot_benchmarks.time_short_sleep",
+        "number": 0,
+        "param_names": [],
+        "params": [],
+        "repeat": 0,
+        "rounds": 2,
+        "sample_time": 0.01,
+        "timeout": 60.0,
+        "type": "time",
+        "unit": "seconds",
+        "version": "2d91a45d0cc310c7fe529c20d93ff6a14385c67f0436fbd2572bc9a6e207f3a0",
+        "warmup_time": -1
+    },
+    "pivot_benchmarks.time_sleep": {
+        "code": "def time_sleep():\n    time.sleep(0.1)",
+        "min_run_count": 2,
+        "name": "pivot_benchmarks.time_sleep",
+        "number": 0,
+        "param_names": [],
+        "params": [],
+        "repeat": 0,
+        "rounds": 2,
+        "sample_time": 0.01,
+        "timeout": 60.0,
+        "type": "time",
+        "unit": "seconds",
+        "version": "0aa60d4e480011cb297ff73c28de0f09d26dca49b1dd855868544cf7c114084b",
+        "warmup_time": -1
+    },
+    "version": 2
+}
